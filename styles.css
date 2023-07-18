@@ -1,6 +1,14 @@
 body {
   margin: 0;
-  font-family: roboto;
+  height: 100vh;
+  max-height: 100vh;
+  font-family: Roboto, sans-serif;
+}
+
+.container,
+.row {
+  margin: 0;
+  font-family: Roboto, sans-serif;
 }
 
 i {
@@ -28,27 +36,22 @@ button:active {
 }
 
 /* Header */
-.header {
-  min-width: 1280px;
-  height: 69px;
-  padding-left: 10px;
-  padding-right: 10px;
-  padding-top: 13px;
-  padding-bottom: 13px;
+.navbar {
   background: #1769aa;
   border-bottom: 1.07px black solid;
-  justify-content: center;
-  align-items: center;
-  gap: 1106px;
   display: flex;
 }
 
-#email-text {
+.header-text {
   color: white;
   font-size: 25.79px;
   font-weight: 700;
   letter-spacing: 2.58px;
   word-wrap: break-word;
+}
+
+a {
+  color: white;
 }
 
 #DA-icon {
@@ -75,14 +78,14 @@ button:active {
 
 /* Page */
 .page {
-  display: flex;
-  justify-content: space-evenly;
-  align-items: center;
+  height: calc(100vh - 56px);
+  max-height: calc(100vh - 56px);
+  overflow-y: auto;
 }
 /* User Left */
 .user-left {
-  width: 240px;
-  height: 763px;
+  width: 100%;
+  height: 100%;
   padding-top: 32px;
   padding-bottom: 32px;
   border-right: 1px black solid;
@@ -142,7 +145,6 @@ button:active {
   overflow: hidden;
   justify-content: center;
   align-items: center;
-  gap: 10px;
   display: inline-flex;
 }
 
@@ -155,8 +157,7 @@ button:active {
 }
 
 #selection-container {
-  width: 244px;
-  height: 794px;
+  width: 100%;
   flex-direction: column;
   justify-content: flex-start;
   align-items: flex-start;
@@ -223,8 +224,8 @@ button:active {
 
 /* mail-tray */
 .mail-tray {
-  width: 489px;
-  height: 763px;
+  width: 100%;
+  height: 100%;
   padding-top: 16px;
   padding-bottom: 24px;
   padding-left: 24px;
@@ -233,19 +234,6 @@ button:active {
   flex-direction: column;
   justify-content: flex-start;
   align-items: flex-start;
-  gap: 10px;
-  display: inline-flex;
-}
-
-#search-box {
-  align-self: stretch;
-  padding: 12px;
-  background: white;
-  border-radius: 20px;
-  overflow: hidden;
-  border: 1px black solid;
-  justify-content: flex-start;
-  align-items: center;
   gap: 10px;
   display: inline-flex;
 }
@@ -268,18 +256,16 @@ button:active {
   display: flex;
 }
 
-#mail-summary1 {
-  width: 441px;
-  height: 97px;
+.mail-summary1 {
+  width: 100%;
   position: relative;
   border-bottom: 1.5px rgba(0, 0, 0, 0.4) solid;
 }
 
 #info-container {
-  height: 79px;
-  left: 66px;
-  top: 9px;
-  position: absolute;
+  width: 100%;
+  padding: 9px 0px;
+  padding-left: 66px;
   flex-direction: column;
   justify-content: flex-start;
   align-items: flex-start;
@@ -340,10 +326,9 @@ button:active {
 }
 
 #mail-page {
-  width: 547px;
-  height: 763px;
+  width: 100%;
   padding: 30px;
-  border-left: 1px black solid;
+  /* border-left: 1px black solid; */
   flex-direction: column;
   justify-content: flex-start;
   align-items: flex-start;
@@ -394,7 +379,7 @@ button:active {
 }
 
 #mail-user-container {
-  width: 463px;
+  width: 100%;
   height: 58px;
   flex-direction: column;
   justify-content: center;
@@ -429,8 +414,14 @@ button:active {
   word-wrap: break-word;
 }
 
+.form-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 #mail-reply {
-  width: 487px;
+  width: 100%;
   height: 179px;
   position: relative;
   background: white;
@@ -444,15 +435,14 @@ button:active {
   padding-right: 11px;
   padding-top: 7px;
   padding-bottom: 7px;
-  left: 420px;
-  top: 138px;
+  right: 8px;
+  bottom: 8px;
   position: absolute;
   background: #2196f3;
   border-radius: 8px;
   overflow: hidden;
   justify-content: center;
   align-items: center;
-  gap: 10px;
   display: inline-flex;
 }
 
