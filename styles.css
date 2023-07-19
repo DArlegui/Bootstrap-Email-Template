@@ -30,7 +30,11 @@ button {
   background-color: transparent;
 }
 
-button:active {
+.button-link {
+  color: white !important;
+}
+
+.email-buttons:active {
   position: relative;
   top: 2px;
 }
@@ -328,12 +332,12 @@ a {
 #mail-page {
   width: 100%;
   padding: 30px;
-  /* border-left: 1px black solid; */
   flex-direction: column;
   justify-content: flex-start;
   align-items: flex-start;
   gap: 33px;
   display: inline-flex;
+  /* border-top: 1px black solid; */
 }
 
 #mail-box {
@@ -362,6 +366,13 @@ a {
   display: inline-flex;
 }
 
+.mail-frame-container {
+  display: flex;
+  align-items: center;
+  align-self: stretch;
+  gap: 9px;
+}
+
 #mail-frame {
   width: 48px;
   height: 48px;
@@ -370,10 +381,10 @@ a {
   border-radius: 26.67px;
   overflow: hidden;
   border: 1.07px black solid;
-
+  display: flex;
   > i {
     padding-top: 15px;
-    padding-left: 10px;
+    padding-left: 9px;
     font-size: 33px;
   }
 }
@@ -420,14 +431,25 @@ a {
   align-items: center;
 }
 
-#mail-reply {
+.reply-container {
   width: 100%;
-  height: 179px;
   position: relative;
   background: white;
   box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.25);
   border-radius: 8px;
   overflow: hidden;
+}
+
+.reply-container textarea {
+  width: 100%;
+  height: 179px;
+  position: relative;
+  background: white;
+  overflow: hidden;
+  border: none;
+  outline: none;
+  resize: none;
+  padding: 15px;
 }
 
 #mail-send {
@@ -444,6 +466,11 @@ a {
   justify-content: center;
   align-items: center;
   display: inline-flex;
+  color: white;
+}
+
+#mail-send:active {
+  bottom: 6px;
 }
 
 #mail-send-text {

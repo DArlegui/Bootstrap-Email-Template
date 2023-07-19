@@ -39,13 +39,19 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav me-auto mb-2 mb-lg-0">
             <li class="nav-item d-sm-block d-md-none">
-              <a class="nav-link active" aria-current="page" href="#">Inbox</a>
+              <a class="nav-link button-link" aria-current="page" href="#"
+                >Inbox</a
+              >
             </li>
             <li class="nav-item d-sm-block d-md-none">
-              <a class="nav-link active" aria-current="page" href="#">Draft</a>
+              <a class="nav-link button-link" aria-current="page" href="#"
+                >Draft</a
+              >
             </li>
             <li class="nav-item d-sm-block d-md-none">
-              <a class="nav-link active" aria-current="page" href="#">Sent</a>
+              <a class="nav-link button-link" aria-current="page" href="#"
+                >Sent</a
+              >
             </li>
           </ul>
         </div>
@@ -56,7 +62,7 @@
 
     <div class="page container-fluid h-100">
       <div class="row h-100">
-        <div class="col-md-4 col-xl-2 d-none d-md-flex code p-0">
+        <div class="col-md-4 col-xl-2 d-none d-md-flex p-0">
           <!-- *User Left -->
           <div class="user-left">
             <div>
@@ -66,23 +72,23 @@
             </div>
             <div id="username">Daniel A</div>
             <div id="compose-container">
-              <button id="compose-button">
+              <button id="compose-button" class="email-buttons">
                 <i class="fa-solid fa-pen" style="color: white"></i>
                 <div id="compose-text">Compose</div>
               </button>
             </div>
             <div id="selection-container">
-              <button id="inbox">
+              <button id="inbox" class="email-buttons">
                 <!-- Inbox Icon -->
                 <i class="fa-solid fa-inbox"></i>
                 <div id="inbox-text">Inbox</div>
               </button>
-              <button id="draft">
+              <button id="draft" class="email-buttons">
                 <!-- Draft Icon -->
                 <i class="fa-solid fa-file"></i>
                 <div id="draft-text">Draft</div>
               </button>
-              <button id="sent">
+              <button id="sent" class="email-buttons">
                 <!-- Sent Icon -->
                 <i class="fa-solid fa-paper-plane"></i>
                 <div id="sent-text">Sent</div>
@@ -93,7 +99,7 @@
 
         <div class="col container">
           <div class="row h-100">
-            <div class="col-12 col-xl-4 p-0 code">
+            <div class="col-12 col-xl-5 p-0">
               <div class="mail-tray">
                 <!-- <input type="text" id="search-box" placeholder="Search"> -->
                 <form class="d-flex align-self-stretch" id="search-box">
@@ -163,12 +169,12 @@
               </div>
             </div>
 
-            <div class="col-md-12 col-xl-8 d-none d-md-flex p-0 code">
+            <div class="col-md-12 col-xl-7 d-none d-md-flex p-0">
               <div id="mail-page">
                 <div id="mail-box">
                   <div id="mail-subject">Title/Subject</div>
                   <div id="mail-info">
-                    <div>
+                    <div class="mail-frame-container">
                       <div id="mail-frame">
                         <i class="fa-solid fa-user"></i>
                       </div>
@@ -186,13 +192,12 @@
                     indestructible Nokia 3310
                   </div>
                 </div>
-                <div id="mail-reply">
-                  <div id="mail-send">
-                    <div id="mail-send-text">Send</div>
-                  </div>
-                  <div id="mail-reply-message">
-                    This text field is for replying.
-                  </div>
+                <div class="reply-container">
+                  <textarea
+                    class="mail-reply"
+                    placeholder="This text is for replying."
+                  ></textarea>
+                  <button id="mail-send">Send</button>
                 </div>
               </div>
             </div>
