@@ -1,3 +1,4 @@
+<!-- Bootstrap-Email -->
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -18,15 +19,14 @@
       src="https://kit.fontawesome.com/512e918ac1.js"
       crossorigin="anonymous"
     ></script>
-    <title>Document</title>
+    <title>Bootstrap-Email</title>
   </head>
   <body>
     <!-- Header -->
     <nav class="navbar fixed-top navbar-expand-md">
       <div class="container-fluid">
-        <div class="header-text d-sm-flex-center">Email</div>
         <button
-          class="navbar-toggler"
+          class="navbar-mytoggler"
           type="button"
           data-bs-toggle="collapse"
           data-bs-target="#navbarSupportedContent"
@@ -34,8 +34,10 @@
           aria-expanded="false"
           aria-label="Toggle navigation"
         >
-          <span class="navbar-toggler-icon"></span>
+          <i class="navbar-toggler-myicon fa-solid fa-bars"></i>
         </button>
+        <div class="header-text d-sm-flex-center">Email</div>
+        <div class="user-abbr">DA</div>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav me-auto mb-2 mb-lg-0">
             <li class="nav-item d-sm-block d-md-none">
@@ -166,9 +168,11 @@
                     <div id="info-date">07/09/23</div>
                   </div>
                 </div>
+                <button id="fab-compose">
+                  <i class="fa-solid fa-plus"></i>
+                </button>
               </div>
             </div>
-
             <div class="col-md-12 col-xl-7 d-none d-md-flex p-0">
               <div id="mail-page">
                 <div id="mail-box">
