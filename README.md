@@ -1,6 +1,6 @@
 # Bootstrap-Email Template
 This project is a simple email template designed using Bootstrap. It provides a basic structure for creating email layouts with responsive design and styling. Below, you'll find a brief overview of the project's components and how to use them.
-## [Click Here for Live Demo](https://darlegui.github.io/bootstrap-email-arlegui/)
+## [Click Here for Live Demo](https://melodious-marigold-e8c3b3.netlify.app/)
 #### [Project Overview](https://docs.google.com/document/d/1s9WocqeuaMphQjDeUMGpRITe0dtWHu81C8IBoEmDNB8/edit)
 #### [Figma Design](https://www.figma.com/file/Ot91GO08AGXKavWYOxb3pL/Email-Outlining-and-Wire-Frames?type=design&node-id=0%3A1&mode=design&t=i0ZuwHjdgCBwaUF3-1)
 
